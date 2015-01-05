@@ -1,7 +1,8 @@
-node-doodles
-============
+![Alt text]( http://lh5.ggpht.com/VJ551nPgKjFzhZ3Q9-ukMBJHhuQ-jSzj6ZC_WkmTsBD3vANXAevxTa0-JTnruWx4l3xTLjj8TTQJ4MgHPgYzf01zmhoO8CcUgR_LA3IehQ "doodle 2015")
 
-Este es un pequeño programa hecho en node.js que consume parte del API-REST de google para obtener las imágenes de los doodles de google según el año y el mes 
+Node-doodles
+============
+ Este es un pequeño programa hecho en node.js que consume parte del API-REST de google para obtener las imágenes de los doodles de google según el año y el mes, este programa no tiene ninguna intención maliciosa, con la cual pueda representar un problema a los servidores de google.
 
 ## Getting Started
 Ejecuta siguientes comandos:
@@ -22,9 +23,6 @@ Mes:`1`
 
 en caso de que google no tenga doodles para una fecha en especifico node-doodles te lo dira y el programa terminara.
 
-
-##Node-doodles
-Este programa no tiene ninguna intención maliciosa, con la cual pueda representar un problema a los servidores de google.
 
 
 
