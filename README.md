@@ -12,7 +12,7 @@ Ejecuta siguientes comandos:
 `git clone https://github.com/Maxtermax/node-doodles.git`
 
 * **Posiciónate en el repositorio clonado** 
-
+* 
 `cd /node-doodles` 
 
 * **Instala las dependencias y corre el programa**  
