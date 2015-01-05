@@ -10,8 +10,9 @@ Ejecuta siguientes comandos:
 * **Clone el repositorio** 
 `git clone https://github.com/Maxtermax/node-doodles.git`
 
-* **Entra al repositorio clonado** 
-`cd ./node-doodles && node node-doodles.js 2015:1 `
+* **posiciónate en el repositorio clonado** 
+`cd ./node-doodles && npm install && node node-doodles.js 2015:1 `
+
 
 Cuando ejecutes el programa incluye 2 parmetros el primero es el año de los doodles que quieres obtener de google 
 y el segundo parametro es el mes de los doodles que quieres obtener de google, nota que estos dos parametros estan separados por 
