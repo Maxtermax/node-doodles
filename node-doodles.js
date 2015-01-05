@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var request = require("request")
 ,		fs = require("fs")
 ,		subprocess = require("child_process").exec;
@@ -14,22 +16,22 @@ function formatSizeUnits(bytes){
   else                        {bytes='0 byte';}
   return bytes;
 };
- 
+
 function getDoodles(path,url) {
-	//is folder exist 
+	//is folder exist
 	request(url, function(error, res, body) {
 		if (!error && res.statusCode == 200) {
 			var doodles = JSON.parse(body);//convert string content to json
 		//doodles is a array what content all doodles information
 			if(!doodles[0]) console.log("Sorry google dont have doodles for this data:",argvSeparator[0]+"/"+argvSeparator[1]);
 			doodles.forEach(function(doodle) {
-		 	var url = "http:"+doodle.url;//url to do the request dont has the http:	
-				var fsExtention = url.slice(url.length-3,url.length);//gif,jpg,png...	
+		 	var url = "http:"+doodle.url;//url to do the request dont has the http:
+				var fsExtention = url.slice(url.length-3,url.length);//gif,jpg,png...
 				var bytesSize = 0;
 
 		  request.get(String(url))
 			.on("data",function(chuck) {
-				//chuck is a buffer to content binary data of the file 
+				//chuck is a buffer to content binary data of the file
 				//some thing like [a2,34,4,54......]
 				bytesSize += chuck.length;
 			})
@@ -38,8 +40,8 @@ function getDoodles(path,url) {
 				console.log(doodle.name,"have",formatSizeUnits(bytesSize));
 			})
 			.pipe(fs.createWriteStream(path+"/"+doodle["name"]+"."+fsExtention));
-			}); 	
-			//if request success 
+			});
+			//if request success
 
 		}else{
 			console.log(new Error("Sorry something bad in the request to:"),url);
@@ -102,4 +104,4 @@ subprocess('mkdir doodles')
 
 
 
-	
+
