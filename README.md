@@ -22,45 +22,8 @@ Año:`2015`
 Mes:`1`
 
 en caso de que google no tenga doodles para una fecha en especifico node-doodles te lo dira y el programa terminara.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* **Como funciona**
+Node-doodles hace una peticion ´GET´ a el API-REST de google y luego busca los imagenes de los doodles,entonces node.js crea un directorio llamado doodles en donde finalmente se descargan las imagenes requeridas. 
 
 
 
