@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-
 var doodles = require("commander")
-  , request = require("request")
+ 	, request = require("request")
   , mkdirp  = require("mkdirp")
   , path    = require("path")
   , util    = require("util")
@@ -10,9 +9,10 @@ var doodles = require("commander")
 doodles
   .version(require('./package').version)
   .description("fetch all doodles of an specific month in a year")
-  .option("-y, --year <n>", "Year")
-  .option("-m, --month <n>", "Month")
+  .option("-y, --year <n>", "Year")//get and save year in doodle from the arguments
+  .option("-m, --month <n>", "Month")//get and save month in doodle from the arguments
   .parse(process.argv);
+  //promise things 
 
 if (!doodles.year) {
   console.error("Please provide a year");
@@ -38,27 +38,27 @@ function formatSizeUnits(bytes) {
 }
 
 function getDoodles(dir, url) {
-  //is folder exist
   request(url, function(error, res, body) {
     if (!error && res.statusCode == 200) {
-      var doodles;
+      var PicDoodles;//Picture doodles 
+      //to prevent conflict with global doodle object
       try {
-        doodles = JSON.parse(body); //convert string content to json
+        PicDoodles = JSON.parse(body); //convert string content to json
       } catch (e) {
         console.error("There was a problem processing the doodles response: %s", err.message);
       }
 
-      // doodles is an array with all the doodles information
-      if (!doodles[0]) {
-        console.error("Sorry google don't have doodles for this date: %s/%s", doodles.year, doodles.month);
+      // PicDoodles is an array with all the doodles information
+      if (!PicDoodles[0]) {
+        console.error("Sorry google don't have doodles for this date: %s/%s",doodles.year, doodles.month);
         process.exit(1);
       }
 
-      doodles.forEach(function(doodle) {
-        var url = util.format("http:%s", doodle.url); //url doesn't have the protocol information
-        var fsExtention = url.slice(url.length - 3, url.length); //gif,jpg,png...
-        var bytesSize = 0;
-        var filename = path.join(dir, util.format("%s.%s", doodle["name"], fsExtention));
+      PicDoodles.forEach(function(PicDoodle) {
+        var url = util.format("http:%s", PicDoodle.url) //url doesn't have the protocol information
+        ,		fsExtention = url.slice(url.length - 3, url.length) //gif,jpg,png...
+        ,		bytesSize = 0
+        ,		filename = path.join(dir, util.format("%s.%s", PicDoodle["name"], fsExtention));
 
         request.get(url)
           .on("data", function(chunk) {
@@ -67,8 +67,8 @@ function getDoodles(dir, url) {
             bytesSize += chunk.length;
           })
           .on("end", function() {
-            console.log(doodle.name, "done");
-            console.log(doodle.name, "length is", formatSizeUnits(bytesSize));
+            console.log(PicDoodle.name, "done");
+            console.log(PicDoodle.name, "length is", formatSizeUnits(bytesSize));
           })
           .pipe(fs.createWriteStream(filename));
       });
