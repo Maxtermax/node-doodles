@@ -1,12 +1,11 @@
 {
   "name": "node-doodles",
   "version": "0.0.1",
-  "scripts": {
-    "start": "node node-doodles.js"
-  },
+  "author": "Esneyder Amin <esneyder_a@hotmail.com>",
   "dependencies": {
-    "request":"2.x.x",
-    "request":"2.x"    
+    "request": "^2.51.0"
+  },
+  "bin": {
+    "doodles": "node-doodles.js"
   }
 }
-
