@@ -1,0 +1,18 @@
+{
+  "name": "node-doodles",
+  "version": "1.0.0",
+  "description": "consumer google API-REST to get images called doodle's ",
+  "main": "node-doodles.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "node-doodles"
+  },
+  "keywords": [
+    "node-doodles"
+  ],
+  "author": "Esneyder Amin Palacios Mena \"Maxtermax\"",
+  "license": "GNU"
+}
