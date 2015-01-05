@@ -8,15 +8,15 @@ Node-doodles
 Ejecuta siguientes comandos:
 
 * **Clone el repositorio** 
-* 
-`git clone https://github.com/Maxtermax/node-doodles.git`
+
+ `git clone https://github.com/Maxtermax/node-doodles.git`
 
 * **Posiciónate en el repositorio clonado** 
-* 
-`cd /node-doodles` 
+
+  `cd /node-doodles` 
 
 * **Instala las dependencias y corre el programa**  
-
+ 
   `npm install && node node-doodles.js 2015:1`
 
 
