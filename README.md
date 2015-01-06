@@ -41,7 +41,7 @@ Run following commands:
 
     or   
 
-   `doodles --year 2014 --month`
+   `doodles --year 2014 --month 12`
 
   now exist one folder in you system calls doodles this folder is in the place where you executed the previous command.
 
