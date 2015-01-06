@@ -1,13 +1,37 @@
 {
   "name": "node-doodles",
-  "version": "0.0.1",
-  "author": "Esneyder Amin <esneyder_a@hotmail.com>",
+  "version": "0.0.24",
+  "preferGlobal": "true",
+  "description": "This is a small module with which you can harness the REST API for google images known as doodles, can get images specifying the year and month of the doodle you want.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "dependencies": {
     "commander": "^2.6.0",
     "mkdirp": "^0.5.0",
     "request": "^2.51.0"
   },
+  "scripts": {
+    "test": "doodles -y 2015 -m 1"
+  },
+  "contributor": "Julian David Duque <julianduquej@gmail.com>",
   "bin": {
-    "doodles": "node-doodles.js"
-  }
+    "doodles": "lib/node-doodles.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Maxtermax/node-doodles"
+  },
+  "keywords": [
+    "node-doodles",
+    "doodles",
+    "google-doodles"
+  ],
+  "author": "esneyder <esneyder_a@hotmail.com> (https://github.com/Maxtermax/)",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/Maxtermax/node-doodles/issues"
+  },
+  "homepage": "https://github.com/Maxtermax/node-doodles"
 }
