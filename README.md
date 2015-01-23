@@ -1,5 +1,5 @@
 ![Alt text]( https://pbs.twimg.com/media/B8AuB46IIAANL63.png:large  "terminal test")
-![Alt text](http://lh6.ggpht.com/N3fDdFNUDkL2YPh-u6bTiJt211FOpY7BubGI5bdRdIiGurZgwCW7sjZqhANUHQjoYFatfYT9k-YxHARPk037WOL99KEgXRNPuTEODMpP=s660 "terminal test")
+![Alt text](http://lh5.ggpht.com/30D8-2hC7V4iHdP5lbRvYR0nUe48Sx_LgqEmMUl3ZVqcWIK_kLgJi927s_xMjyxK0nc-KyGkpa7--brImuacBNMYJwdB8OEzwJKdI-nV=s660 "abuelo :)")
 
 overview
 ============
@@ -46,7 +46,9 @@ Run following commands:
   now exist one folder in you system calls doodles this folder is in the place where you executed the previous command. in case google doesn't have doodle for one date node-doodle tell it and the program will be end.
  
  too can get doodles from a range a time with:
+ 
   `doodles -Y 2014..2015 -M 1..2`   
+ 
  note this way is make reference to the date with Y and M for year and month in uppercase
  
   
