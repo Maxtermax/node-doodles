@@ -1,6 +1,6 @@
 {
   "name": "node-doodles",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "preferGlobal": "true",
   "description": "This is a small module with which you can harness the REST API for google images known as doodles, can get images specifying the year and month of the doodle you want.",
   "main": "index.js",
@@ -8,9 +8,12 @@
     "test": "test"
   },
   "dependencies": {
+    "cli-color": "^0.3.2",
+    "clui": "^0.3.1",
     "commander": "^2.6.0",
     "mkdirp": "^0.5.0",
-    "request": "^2.51.0"
+    "request": "^2.51.0",
+    "underscore": "^1.7.0"
   },
   "scripts": {
     "test": "doodles -y 2015 -m 1"
