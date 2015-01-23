@@ -1,4 +1,4 @@
-![Alt text]( http://lh5.ggpht.com/VJ551nPgKjFzhZ3Q9-ukMBJHhuQ-jSzj6ZC_WkmTsBD3vANXAevxTa0-JTnruWx4l3xTLjj8TTQJ4MgHPgYzf01zmhoO8CcUgR_LA3IehQ "doodle 2015")
+![Alt text]( https://pbs.twimg.com/media/B8AuB46IIAANL63.png:large  "doodle 2015")
 
 overview
 ============
@@ -21,14 +21,13 @@ Run following commands:
 
 `git clone https://github.com/Maxtermax/node-doodles.git`
 
-* **Run the main directive in the command prompt** 
+* **Usage** 
+ Run the main directive in the command prompt
 
   `doodles` 
 
    if you get this error:
-   
-   
-   
+
   `Please provides a year`
 
 
@@ -43,9 +42,13 @@ Run following commands:
 
    `doodles --year 2014 --month 12`
 
-  now exist one folder in you system calls doodles this folder is in the place where you executed the previous command.
-
-in case google doesn't have doodle for one date node-doodle tell it and the program will be end.
+  now exist one folder in you system calls doodles this folder is in the place where you executed the previous command. in case google doesn't have doodle for one date node-doodle tell it and the program will be end.
+ 
+ too can get doodles from a range a time with:
+  `doodles -Y 2014..2015 -M 1..2`   
+ note this way is make reference to the date with Y and M for year and month in uppercase
+ 
+  
 
 ## How it works
 Node-doodles make one ´GET´ request to google API-REST and then search the images called doodles,and then with help node.js  the program make a folder called doodles and finally download all images required. 
