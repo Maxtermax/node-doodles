@@ -1,1 +1,1 @@
-require("./lib/node-doodles.js")();
+require("./lib/node-doodles.js");
