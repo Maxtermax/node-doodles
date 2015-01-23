@@ -22,7 +22,7 @@ Run following commands:
 
 `git clone https://github.com/Maxtermax/node-doodles.git`
 
-* **Usage** 
+ ## Usage
  Run the main directive in the command prompt
 
   `doodles` 
