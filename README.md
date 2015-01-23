@@ -1,4 +1,5 @@
-![Alt text]( https://pbs.twimg.com/media/B8AuB46IIAANL63.png:large  "doodle 2015")
+![Alt text]( https://pbs.twimg.com/media/B8AuB46IIAANL63.png:large  "terminal test")
+![Alt text](http://lh6.ggpht.com/N3fDdFNUDkL2YPh-u6bTiJt211FOpY7BubGI5bdRdIiGurZgwCW7sjZqhANUHQjoYFatfYT9k-YxHARPk037WOL99KEgXRNPuTEODMpP=s660 "terminal test")
 
 overview
 ============
