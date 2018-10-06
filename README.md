@@ -1,12 +1,13 @@
 ![Alt text]( https://pbs.twimg.com/media/B8AuB46IIAANL63.png:large  "terminal test")
 ![Alt text](http://lh5.ggpht.com/30D8-2hC7V4iHdP5lbRvYR0nUe48Sx_LgqEmMUl3ZVqcWIK_kLgJi927s_xMjyxK0nc-KyGkpa7--brImuacBNMYJwdB8OEzwJKdI-nV=s660 "abuelo :)")
 
-overview
+Overview
 ============
 This is a small module with which you can harness the REST API for google images known as doodles, can get images specifying the year and month of the doodle you want.
 
 This program has no malicious intent, with which it may be problematic to google servers.
- 
+
+If you find this module helpful  please donate [here](https://www.paypal.me/EPalaciosMena)  with the mount of you want, it helps to maintain the project and enhands all.
 
 ## Getting Started
 Run following commands:
@@ -67,3 +68,4 @@ This program is open source, whoever look at the source code could do it and hel
 
 Acknowledgements to [julian david duque](https://github.com/julianduque "julian david duque")  for their contributions and tips for node-doodles.
 
+If you find this module helpful  please donate [here](https://www.paypal.me/EPalaciosMena)  with the mount of you want, it helps to maintain the project and enhands all.
